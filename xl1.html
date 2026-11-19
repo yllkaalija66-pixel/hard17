@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced CSS Design</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                135deg,
+                #667eea,
+                #764ba2
+            );
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+
+            /* Rounded Corners */
+            border-radius: 25px;
+
+            /* Border Image */
+            border: 15px solid transparent;
+            border-image-source: url(
+                "https://www.w3.org/TR/css-backgrounds-3/images/border.png"
+            );
+            border-image-slice: 30;
+            border-image-repeat: round;
+
+            /* Box Shadow */
+            box-shadow: 0 10px 25px
+                rgba(0, 0, 0, 0.3);
+        }
+
+        /* Background Gradient */
+        .box {
+            background: linear-gradient(
+                45deg,
+                #3498db,
+                #8e44ad
+            );
+
+            color: white;
+            padding: 30px;
+            margin-top: 25px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 8px 15px
+                rgba(0, 0, 0, 0.2);
+
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-8px);
+        }
+
+        button {
+            background-color: #764ba2;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #5a3680;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Advanced CSS Design</h1>
+
+    <div class="container">
+
+        <h2>Mirë se vini!</h2>
+
+        <p>
+            Kjo është një faqe moderne e krijuar
+            me vetitë e avancuara të CSS.
+        </p>
+
+        <div class="box">
+
+            <h2>CSS Effects</h2>
+
+            <p>
+                Rounded Corners, Border Images,
+                Backgrounds dhe Box Shadows.
+            </p>
+
+        </div>
+
+        <button>Lexo më shumë</button>
+
+    </div>
+
+</body>
+</html>
